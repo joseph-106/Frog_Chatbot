@@ -12,8 +12,8 @@ body{
 
 .layout {
   position: absolute;
-  left: 30%;
-  bottom: 50px;
+  left: 25%;
+  bottom: 70px;
   width: 500px;
   height: 500px;
   margin: auto;
@@ -23,9 +23,6 @@ body{
   width: 360px;
   height: 180px;
   margin: auto;
-  background-image: url("../static/logo.png");
-  background-size: contain;
-  background-repeat: no-repeat;
   margin-bottom: 10px;
 }
 
