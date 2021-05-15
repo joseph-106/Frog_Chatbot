@@ -12,17 +12,18 @@ body{
 
 .layout {
   position: absolute;
-  left: 25%;
-  bottom: 70px;
+  left: 23%;
+  bottom: 80px;
   width: 500px;
-  height: 500px;
+  height: 520px;
   margin: auto;
 }
 
-.frog {
-  width: 360px;
-  height: 180px;
+#frog {
+  width: 380px;
+  height: 220px;
   margin: auto;
+  margin-left: 80px;
   margin-bottom: 10px;
 }
 
@@ -31,7 +32,7 @@ body{
   height: 80px;
   text-align: center;
   padding-top: 60px;
-  margin-top: 30px;
+  margin-top: 20px;
   margin: auto;
   border-radius: 5px;
   border: solid 2px #000000;
@@ -50,8 +51,15 @@ body{
   text-align: center;
   margin: auto;
   margin-top: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   cursor: pointer;
+}
+
+.footer {
+  color: darkgray;
+  font-size: 0.8em;
+  text-align: center;
+  padding-bottom: 15px;
 }
 
 .input_style {
