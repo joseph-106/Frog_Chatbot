@@ -13,7 +13,6 @@ var follow = 0; //따라하기 코드를 구분하기 위한 변수
 
 function check_text() {
 	var value = document.getElementById('input').value;
-	var frog_says = document.getElementsByClassName('frog_says');
 	var reply = document.getElementById('frog_console');
 	var frog = document.getElementById('frog');
 
@@ -21,13 +20,13 @@ function check_text() {
 		frog.src = "static/images/frog1.png";
 
 		if(value == '안녕'){
-			frog_says[0].innerHTML = data.안녕;
+			reply.innerHTML = data.안녕;
 		}
     	if(value == '뭐해'){
-			frog_says[0].innerHTML = data.뭐해;
+			reply.innerHTML = data.뭐해;
 		}
     	if(value == '잘있어'){;
-			frog_says[0].innerHTML = data.잘있어;
+			reply.innerHTML = data.잘있어;
 		}
 		if(value == '불꺼줘'){
 			if(light == 0){
@@ -47,19 +46,19 @@ function check_text() {
 				else{
 					light = 0;
 					document.body.style.backgroundColor = '#819475';
-					frog_says[0].innerHTML = data.불꺼줘;
+					reply.innerHTML = data.불꺼줘;
 				}
 			}
 			
 		}
 		if(value == '불켜줘'){
 			if(light == 1){
-				frog_says[0].innerHTML = '불은 이미 켜져있다 개굴!';
+				reply.innerHTML = '불은 이미 켜져있다 개굴!';
 			}
 			else{
 				light = 1;
 				document.body.style.backgroundColor = '#d2edc0';
-				frog_says[0].innerHTML = data.불켜줘;
+				reply.innerHTML = data.불켜줘;
 			}
 			
 		}
@@ -71,14 +70,14 @@ function check_text() {
 	if(follow == 1){
 		if (value == '그만해'){
 			follow = 0;
-			frog_says[0].innerHTML = data.그만해;
+			reply.innerHTML = data.그만해;
 			frog.src = "static/images/frog2.png";
 		}
 		else if(value == '따라해봐'){
-			frog_says[0].innerHTML = data.따라해봐;
+			reply.innerHTML = data.따라해봐;
 		}
 		else{
-			frog_says[0].innerHTML = value + ' 개굴!';
+			reply.innerHTML = value + ' 개굴!';
 		}
 	}
 }

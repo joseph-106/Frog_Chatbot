@@ -27,7 +27,7 @@ body{
   margin-bottom: 10px;
 }
 
-.frog_says {
+#frog_console {
   width: 420px;
   height: 80px;
   text-align: center;
